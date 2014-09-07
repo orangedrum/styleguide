@@ -51,17 +51,48 @@ h6{
 -------------------------------------------------------------------*/
 header{
 	background: #eee;
+	border: 1px solid #aaa;
+	display: block;
 	width: 100%;
+	z-index: 100;
+	padding: 10px 0;
+}
+header .logo{
+	width: 216px;
+	float: left;
+	text-align: left;
+}
+header h2{
+	font-size: 60%;
+	font-weight: 600;
 }
 
 /*------------------------------------------------------------------
 [Navigation]
 -------------------------------------------------------------------*/
-nav{
-	background: #ddd;
+/*-----MAIN NAV-----*/
+.main-nav{
+	background: #fff;
+	overflow: hidden;
+	text-align: right;
 }
 .main-nav li{
 	display: inline-block;
+	padding: 0 11px;
+}
+.main-nav a{
+	color: #ccc;
+	font-size: 100%;
+	text-decoration: none;
+}
+.main-nav .login{
+	display: none;
+}
+/*-----SUB NAV-----*/
+.sub-nav{
+	background: #ddd;
+}
+.sub-nav li{
 	float: left;
 }
 .sub-nav li ul{
@@ -73,6 +104,53 @@ nav{
 -------------------------------------------------------------------*/
 main{
 	background: #ccc;
+	text-align: left;
+}
+
+/*------------------------------------------------------------------
+[Parallax]
+-------------------------------------------------------------------*/
+.parallax img{
+	width: 400px;
+	height: 100px;
+	background-color: #ccc;
+	float: right;
+}
+.article1{
+	background: repeating-linear-gradient(
+  	45deg,
+  	#333,
+  	#333 10px,
+  	#444 10px,
+  	#444 20px);
+  	color: #fff;
+}
+.article2{
+	background: repeating-linear-gradient(
+  	45deg,
+  	#555,
+  	#555 10px,
+  	#666 10px,
+  	#666 20px);
+  	color: #fff;
+}
+.article3{
+	background: repeating-linear-gradient(
+  	45deg,
+  	#aaa,
+  	#aaa 10px,
+  	#bbb 10px,
+  	#bbb 20px);
+  	color: #fff;
+}
+.article4{
+	background: repeating-linear-gradient(
+  	45deg,
+  	#ccc,
+  	#ccc 10px,
+  	#ddd 10px,
+  	#ddd 20px);
+  	color: #fff;
 }
 
 /*------------------------------------------------------------------

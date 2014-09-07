@@ -4,40 +4,58 @@
         <meta charset="UTF-8">
         <title>StyleGuide</title>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/parallax.js"></script>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/open-iconic.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header>
+        <header role="banner">
             <div class="container">
-                <h1>Style Guide</h1>
-                <h2>a dynamic modular front-end starting point</h2>
-
-                <div class="login">
-                    <form action="" method="get">
-                        Username: <input type="text" name="user-name">
-                        Password: <input type="text" name="password">
-                        Encryption: <keygen name="supersafe">
-                        <input type="submit">
-                    </form>
+                <div class="logo">    
+                    <h1>Style Guide</h1>
+                    <h2>a dynamic modular front-end starting point</h2>
                 </div>
+
+                <nav role="navigation">
+                    <ul class="main-nav">
+                        <li>
+                            <i class="icon-home"></i>
+                            <a href="#">View One</a>
+                        </li>
+                        <li>
+                            <a href="#">View Two</a>
+                        </li>
+                        <li>
+                            <a href="#">View Three</a>
+                        </li>
+                        <li>
+                            <a href="#">View Four</a>
+                        </li>
+                        <li>
+                            <a href="#">View Five</a>
+                        </li>
+                        <li class="login-menu">
+                            <a href="#">Login</a>
+                            <div class="login">
+                                <form action="" method="get">
+                                    Username: <input type="text" name="user-name">
+                                    Password: <input type="text" name="password">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </div><!--end header container-->
         </header>
 
-        <nav>
+        <nav class="sub-nav" role="navigation">
             <div class="container">
-                <ul class="main-nav">
-                    <li>View One</li>
-                    <li>View Two</li>
-                    <li>View Three</li>
-                    <li>View Four</li>
-                    <li>View Five</li>
-                </ul>
-                <ul class="sub-nav">
+                <ul>
                     <li>
-                        <button>menu</button>
+                        menu
                         <ul>
                             <li>sub menu item</li>
                             <li>sub menu item</li>
@@ -47,7 +65,7 @@
                         </ul>
                     </li>
                     <li>
-                        <button>menu</button>
+                        menu
                         <ul>
                             <li>sub menu item</li>
                             <li>sub menu item</li>
@@ -57,7 +75,7 @@
                         </ul>
                     </li>
                     <li>
-                        <button>menu</button>
+                        menu
                         <ul>
                             <li>sub menu item</li>
                             <li>sub menu item</li>
@@ -67,7 +85,7 @@
                         </ul>
                     </li>
                     <li>
-                        <button>menu</button>
+                        menu
                         <ul>
                             <li>sub menu item</li>
                             <li>sub menu item</li>
@@ -77,7 +95,7 @@
                         </ul>
                     </li>
                     <li>
-                        <button>menu</button>
+                        menu
                         <ul>
                             <li>sub menu item</li>
                             <li>sub menu item</li>
@@ -91,21 +109,8 @@
         </nav>
 
         <main>
-            <div class="parallax">            
-                <article>
-                    <h4> Body</h4>
-                    <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                    <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                    <p>Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                </article>
-                <article>
-                    <h5> Body</h5>
-                    <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                </article>
-            </div><!--end parallax-->
-
             <div class="container">    
-                <section> 
+                <section class="grid_70"> 
                     <article>
                         <h2> Body</h2>
                         <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
@@ -133,7 +138,7 @@
                         </datalist>
                     </form>
                 </section>
-                <aside>
+                <aside class="grid_20 prefix_4">
                     <div class="ad-sm">
                         <img src="#">
                         <p>Ancient alien technology sightings kachina doll sightings mercury.</p>
@@ -151,6 +156,40 @@
                     </div>
                 </aside>    
             </div>
+
+            <div class="parallax">            
+                <article class="article1" data-id="article-1" data-start="200" data-stop="1150">
+                    <div class="parallax-content container">    
+                        <h4> Body</h4>
+                        <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                        <button>Call to action</button>
+                        <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                        <button>Call to action</button>
+                        <p>Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                    </div>
+                </article>
+                <article class="article2">
+                    <div class="parallax-content">    
+                        <h5> Body</h5>
+                        <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                        <button>Call to action</button>
+                    </div>
+                </article>
+                <article class="article3">
+                    <div class="parallax-content">    
+                        <h4> Body</h4>
+                        <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                        <button>Call to action</button>
+                    </div>
+                </article>
+                <article class="article4">
+                    <div class="parallax-content">    
+                        <h5> Body</h5>
+                        <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                        <button>Call to action</button>
+                    </div>
+                </article>
+            </div><!--end parallax-->
         </main>
 
         <footer>
