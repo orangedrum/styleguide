@@ -58,8 +58,6 @@ header{
 	padding: 10px 0;
 }
 header .logo{
-	width: 216px;
-	float: left;
 	text-align: left;
 }
 header h2{
@@ -70,10 +68,11 @@ header h2{
 /*------------------------------------------------------------------
 [Navigation]
 -------------------------------------------------------------------*/
+/*-----GLOBAL NAV-----*/
+
 /*-----MAIN NAV-----*/
 .main-nav{
 	background: #fff;
-	overflow: hidden;
 	text-align: right;
 }
 .main-nav li{
@@ -91,9 +90,11 @@ header h2{
 /*-----SUB NAV-----*/
 .sub-nav{
 	background: #ddd;
+	width: 100%;
 }
 .sub-nav li{
-	float: left;
+	width: 1%;
+	display: table-cell;
 }
 .sub-nav li ul{
 	display: none;
