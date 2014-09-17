@@ -18,6 +18,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #333;
 }
+h1,
 h2,
 h3,
 h4,
@@ -26,18 +27,6 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-/*
-Typography
-
-Markup:
-<h1>Header One</h1>
-<h2>Header Two</h2>
-<h3>Header Three</h3>
-<h4>Header Four</h4>
-<h5>Header Five</h5>
-
-Styleguide 1.0
-*/
 h1 {
   font-size: 200%;
   font-weight: 300;
@@ -58,35 +47,11 @@ h6 {
   font-size: 105%;
 }
 /*------------------------------------------------------------------
+[Buttons]
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
 [Header]
 -------------------------------------------------------------------*/
-/*
-Our Site's Header
-
-header{
-	background: #eee;
-	border: 1px solid #aaa;
-	display: block;
-	width: 100%;
-	z-index: 100;
-	padding: 10px 0;
-}
-
-Markup:
-<header role="banner">
-    <div class="container">
-        <div class="logo grid_30">    
-            <h1>Style Guide</h1>
-            <h2>a dynamic modular front-end starting point</h2>
-        </div>
-		<nav role="navigation" class="grid_60">
-            ...
-        </nav>
-    </div>
-</header>
-
-Styleguide 1.2
-*/
 header {
   background: #eee;
   border: 1px solid #aaa;
@@ -97,7 +62,6 @@ header {
 }
 header .logo {
   text-align: left;
-  color: green;
 }
 header h2 {
   font-size: 60%;
