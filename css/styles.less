@@ -1,0 +1,277 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Style Guide
+Version:	0.5
+Assigned to:	Jean Kaluza
+Primary use:	Guide
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[KSS StyleGuide]
+see: https://github.com/kneath/kss
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Typography]
+Typography is setup to work explicitly with google fonts
+-------------------------------------------------------------------*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+/*
+Typography
+
+Markup:
+<h1>Header One</h1>
+<h2>Header Two</h2>
+<h3>Header Three</h3>
+<h4>Header Four</h4>
+<h5>Header Five</h5>
+
+Styleguide 1.0
+*/
+h1{
+	font-size: 200%;
+	font-weight: 300;
+}
+h2{
+	font-size: 150%;
+}
+h3{
+	font-size: 140%;
+}
+h4{
+	font-size: 130%;
+}
+h5{
+	font-size: 110%;
+}
+h6{
+	font-size: 105%;
+}
+
+
+/*------------------------------------------------------------------
+[Header]
+-------------------------------------------------------------------*/
+/*
+Our Site's Header
+
+header{
+	background: #eee;
+	border: 1px solid #aaa;
+	display: block;
+	width: 100%;
+	z-index: 100;
+	padding: 10px 0;
+}
+
+Markup:
+<header role="banner">
+    <div class="container">
+        <div class="logo grid_30">    
+            <h1>Style Guide</h1>
+            <h2>a dynamic modular front-end starting point</h2>
+        </div>
+		<nav role="navigation" class="grid_60">
+            ...
+        </nav>
+    </div>
+</header>
+
+Styleguide 1.2
+*/
+header{
+	background: #eee;
+	border: 1px solid #aaa;
+	display: block;
+	width: 100%;
+	z-index: 100;
+	padding: 10px 0;
+
+	.logo{
+		text-align: left;
+		color: green;
+	}
+}
+header h2{
+	font-size: 60%;
+	font-weight: 600;
+}
+
+
+/*------------------------------------------------------------------
+[Navigation]
+-------------------------------------------------------------------*/
+
+/*-----MAIN NAV-----*/
+/*
+Navigation
+
+Markup:
+<nav role="navigation" class="grid_60">
+    <ul class="main-nav">
+        <li>
+            <i class="icon-home"></i>
+            <a href="#">View One</a>
+        </li>
+        <li>
+            <a href="#">View Two</a>
+        </li>
+        <li>
+            <a href="#">View Three</a>
+        </li>
+        <li>
+            <a href="#">View Four</a>
+        </li>
+        <li>
+            <a href="#">View Five</a>
+        </li>
+        <li class="login-menu">
+            <a href="#">Login</a>
+            <div class="login">
+                <form action="" method="get">
+                    Username: <input type="text" name="user-name">
+                    Password: <input type="text" name="password">
+                </form>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+Styleguide 1.3
+*/
+.main-nav{
+	background: #fff;
+	text-align: right;
+}
+.main-nav li{
+	display: inline-block;
+	padding: 0 11px;
+}
+.main-nav a{
+	color: #ccc;
+	font-size: 100%;
+	text-decoration: none;
+}
+.main-nav .login{
+	display: none;
+}
+/*-----SUB NAV-----*/
+/*
+Sub Navigation
+
+Markup:
+<nav class="sub-nav" role="navigation">
+    <div class="container">
+        <ul>
+            <li>
+                menu
+                <ul>
+                    <li>sub menu item</li>
+                    ...
+                </ul>
+            </li>
+            ...
+        </ul>
+    </div>
+</nav>
+
+Styleguide 1.4
+*/
+.sub-nav{
+	background: #ddd;
+	width: 100%;
+}
+.sub-nav li{
+	width: 1%;
+	display: table-cell;
+}
+.sub-nav li ul{
+	display: none;
+}
+
+/*------------------------------------------------------------------
+[Main]
+-------------------------------------------------------------------*/
+main{
+	background: #ccc;
+	text-align: left;
+}
+
+/*------------------------------------------------------------------
+[Parallax]
+-------------------------------------------------------------------*/
+.parallax img{
+	width: 400px;
+	height: 100px;
+	background-color: #ccc;
+	float: right;
+}
+.parallax section{
+	padding: 100px 0;
+}
+.parallax article{
+	bottom: 200px;
+	top: auto;
+}
+.section1{
+	/*background: repeating-linear-gradient(
+  	45deg,
+  	#333,
+  	#333 10px,
+  	#444 10px,
+  	#444 20px)
+  	fixed;*/
+  	color: #fff;
+  	background: url(http://bgfons.com/upload/aluminum_texture1784.jpg) no-repeat fixed;
+}
+.section2{
+	/*background: repeating-linear-gradient(
+  	45deg,
+  	#555,
+  	#555 10px,
+  	#666 10px,
+  	#666 20px)
+  	fixed;*/
+  	color: #fff;
+  	background: url(http://bgfons.com/upload/aluminum_texture1644.jpg) no-repeat fixed;
+}
+.section3{
+	/*background: repeating-linear-gradient(
+  	45deg,
+  	#aaa,
+  	#aaa 10px,
+  	#bbb 10px,
+  	#bbb 20px)
+  	fixed;*/
+  	color: #fff;
+  	background: url(http://www.dream-wallpaper.com/free-wallpaper/art-wallpaper/black-background-4-wallpaper/1680x1050/free-wallpaper-8.jpg) no-repeat fixed;
+}
+.section4{
+	/*background: repeating-linear-gradient(
+  	45deg,
+  	#ccc,
+  	#ccc 10px,
+  	#ddd 10px,
+  	#ddd 20px)
+  	fixed;*/
+  	color: #fff;
+  	background: url(http://bgfons.com/upload/ornaments_texture1127.jpg) no-repeat fixed;
+}
+
+/*------------------------------------------------------------------
+[Footer]
+-------------------------------------------------------------------*/
+footer{
+	width: 100%;
+	background: #bbb;
+}

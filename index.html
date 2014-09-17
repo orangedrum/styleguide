@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <title>StyleGuide</title>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="js/parallax.js"></script>
+        <script src="js/myparallax.js"></script>
+        <script src="js/imagesloaded.js"></script>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/open-iconic.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header role="banner">
@@ -158,37 +158,45 @@
             </div>
 
             <div class="parallax">            
-                <article class="article1" data-id="article-1" data-start="200" data-stop="1150">
-                    <div class="parallax-content container">    
-                        <h4> Body</h4>
-                        <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                        <button>Call to action</button>
-                        <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                        <button>Call to action</button>
-                        <p>Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                <section class="section1">
+                    <div class="parallax-content container" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target=".section1">
+                        <article data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target=".section1 h4">    
+                            <h4> Body</h4>
+                            <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                            <button>Call to action</button>
+                            <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                            <button>Call to action</button>
+                            <p>Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                        </article>
                     </div>
-                </article>
-                <article class="article2">
-                    <div class="parallax-content container">    
-                        <h5> Body</h5>
-                        <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                        <button>Call to action</button>
+                </section>
+                <section class="section2">
+                    <div class="parallax-content container" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".section2">    
+                        <article data-center="opacity: 1" data-center-top="opacity: 0" data--100-bottom="opacity: 0;" data-anchor-target=".section2">    
+                            <h5> Body</h5>
+                            <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                            <button>Call to action</button>
+                        </article>
                     </div>
-                </article>
-                <article class="article3">
+                </section>
+                <section class="section3">
                     <div class="parallax-content container">    
-                        <h4> Body</h4>
-                        <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                        <button>Call to action</button>
+                        <article>    
+                            <h4> Body</h4>
+                            <p>Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                            <button>Call to action</button>
+                        </article>
                     </div>
-                </article>
-                <article class="article4">
+                </section>
+                <section class="section4">
                     <div class="parallax-content container">    
-                        <h5> Body</h5>
-                        <p><img src="#">Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
-                        <button>Call to action</button>
+                        <article>
+                            <h5> Body</h5>
+                            <p><img src="#">I am section 4. Ancient alien technology sightings kachina doll sightings mercury, otherworldly visitors Sumerian texts crystal skull Easter island, evidence petroglyph space brothers mercury worm hole. Pyramids technology Puma Punku sky people ancient god Puma Punku, helicopter heiroglyph weightless megoliths ancient civilization helicopter heiroglyph Giorgio, grey mystery clearly alien elongated skull gods Mahabharata.</p>
+                            <button>Call to action</button>
+                        </article>
                     </div>
-                </article>
+                </section>
             </div><!--end parallax-->
         </main>
 
